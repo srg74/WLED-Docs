@@ -11,10 +11,10 @@
       
       
       
-        <link rel="prev" href="../ddp/">
+        <link rel="prev" href="../custom-ap/">
       
       
-        <link rel="next" href="../pir-sensors/">
+        <link rel="next" href="../../about/contributors/">
       
       
       <link rel="icon" href="../../assets/images/ui/aircoookie/blurple.png">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Custom Access Point SSID and Password - WLED Project</title>
+        <title>Using PIR Sensors - WLED Project</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modifying-the-access-point-ssid" class="md-skip">
+        <a href="#introduction" class="md-skip">
           Skip to content
         </a>
       
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Custom Access Point SSID and Password
+              Using PIR Sensors
             
           </span>
         </div>
@@ -1684,6 +1684,27 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../custom-ap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Access Point Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1698,7 +1719,7 @@
           
   
   <span class="md-ellipsis">
-    Custom Access Point Configuration
+    Using PIR Sensors
   </span>
   
 
@@ -1709,7 +1730,7 @@
         
   
   <span class="md-ellipsis">
-    Custom Access Point Configuration
+    Using PIR Sensors
   </span>
   
 
@@ -1729,38 +1750,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modifying-the-access-point-ssid" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Modifying the Access Point SSID
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modifying-the-access-point-password" class="md-nav__link">
+  <a href="#using-hc-sr501-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Modifying the Access Point Password
+      Using HC-SR501 sensor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using HC-SR501 sensor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-as-a-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: as a switch
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#modifying-the-access-point-ssid-to-be-unique" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#option-2-as-a-pir-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Modifying the Access Point SSID to be Unique
+      Option 2: as a PIR sensor
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1768,27 +1795,6 @@
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../pir-sensors/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Using PIR Sensors
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -1934,38 +1940,44 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#modifying-the-access-point-ssid" class="md-nav__link">
+  <a href="#introduction" class="md-nav__link">
     <span class="md-ellipsis">
-      Modifying the Access Point SSID
+      Introduction
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#modifying-the-access-point-password" class="md-nav__link">
+  <a href="#using-hc-sr501-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Modifying the Access Point Password
+      Using HC-SR501 sensor
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Using HC-SR501 sensor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#option-1-as-a-switch" class="md-nav__link">
+    <span class="md-ellipsis">
+      Option 1: as a switch
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#modifying-the-access-point-ssid-to-be-unique" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#option-2-as-a-pir-sensor" class="md-nav__link">
     <span class="md-ellipsis">
-      Modifying the Access Point SSID to be Unique
+      Option 2: as a PIR sensor
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    <span class="md-ellipsis">
-      Example
-    </span>
-  </a>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1984,7 +1996,7 @@
                   
 
   
-    <a href="https://github.com/Aircoookie/WLED-Docs/edit/main/docs/advanced/custom-ap.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/Aircoookie/WLED-Docs/edit/main/docs/advanced/pir-sensors.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
     </a>
@@ -1992,48 +2004,42 @@
   
 
 
-  <h1>Custom Access Point Configuration</h1>
+  <h1>Using PIR Sensors</h1>
 
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><em>Note: These options change the documented access point name and password. The WLED community does not recommend changing these settings unless you are familiar with the risks.</em></p>
-</div>
-<p>Three compile time defines are available to modify the access point name. These are <code>WLED_AP_SSID</code>, <code>WLED_AP_PASS</code>, and <code>WLED_AP_SSID_UNIQUE</code>. Defining <code>WLED_AP_SSID</code> will set the SSID to the value of the define. Defining <code>WLED_AP_PASS</code> will set the password to the value of the define. Defining <code>WLED_AP_SSID_UNIQUE</code> will append the last 6 digits of the MAC address to the SSID.</p>
-<p><code>WLED_AP_SSID</code> and <code>WLED_AP_PASS</code> are string values, and as such need to be defined with <code>"</code> surrounding them. For example, <code>#define WLED_AP_SSID "MyWLED"</code> or <code>-D WLED_AP_SSID='"MyWLED"'</code> in the <code>build_flags</code> of <code>platformio.ini</code>.</p>
-<h3 id="modifying-the-access-point-ssid">Modifying the Access Point SSID</h3>
-<p>Defining <code>WLED_AP_SSID</code> will set the SSID to the value of the define. This is useful to set a device specific access point name. For example, if you have multiple WLED devices, you can set the SSID to the device name.</p>
-<p><code>WLED_AP_SSID</code> is a string value, and as such needs to be defined with <code>"</code> surrounding it. For example, <code>#define WLED_AP_SSID "MyWLED"</code> or <code>-D WLED_AP_SSID='"MyWLED"'</code> in the <code>build_flags</code> of <code>platformio.ini</code>.</p>
-<h3 id="modifying-the-access-point-password">Modifying the Access Point Password</h3>
-<p>Defining <code>WLED_AP_PASS</code> will set the password to the value of the define. This is useful to set a device specific access point password. For example, if you have multiple WLED devices, you can set the password to the device name.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-</div>
-<p>If <code>WLED_AP_PASS</code> is defined, but <code>WLED_AP_SSID</code> is not, the compilation will fail. Ensure you define both <code>WLED_AP_SSID</code> and <code>WLED_AP_PASS</code> if you wish to change the access point password. Please also change the SSID if you wish to set a custom password.</p>
-<p><code>WLED_AP_PASS</code> is a string value, and as such needs to be defined with <code>"</code> surrounding it. For example, <code>#define WLED_AP_PASS "MyWLEDPass"</code> or <code>-D WLED_AP_PASS='"MyWLEDPass"'</code> in the <code>build_flags</code> of <code>platformio.ini</code>.</p>
-<h3 id="modifying-the-access-point-ssid-to-be-unique">Modifying the Access Point SSID to be Unique</h3>
-<p>Defining <code>WLED_AP_SSID_UNIQUE</code> will append the last 6 digits of the MAC address to the SSID. This is useful to set a device specific access point name with a common prefix. For example, if you have multiple WLED devices, you can set the SSID to <code>ChristmasTree-</code> followed by the last 6 digits of the MAC address.</p>
-<p><code>WLED_AP_SSID_UNIQUE</code> is a boolean value, and as such only needs to be defined or not. For example, <code>#define WLED_AP_SSID_UNIQUE</code> or <code>-D WLED_AP_SSID_UNIQUE</code> in the <code>build_flags</code> of <code>platformio.ini</code>.</p>
-<h3 id="example">Example</h3>
-<p>For custom devices in <code>platformio_override.ini</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">[env:mywled]</span>
-<span class="na">board</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32dev</span>
-<span class="na">platform</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${esp32.platform}</span>
-<span class="na">platform_packages</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${esp32.platform_packages}</span>
-<span class="na">build_unflags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${common.build_unflags}</span>
-<span class="na">build_flags</span><span class="w"> </span><span class="o">=</span>
-<span class="w">    </span><span class="na">${common.build_flags_esp32}</span>
-<span class="w">    </span><span class="na">-D WLED_AP_SSID_UNIQUE</span>
-<span class="w">    </span><span class="na">-D WLED_AP_SSID</span><span class="o">=</span><span class="s">&#39;&quot;MyWLED&quot;&#39;</span>
-<span class="w">    </span><span class="na">-D WLED_AP_PASS</span><span class="o">=</span><span class="s">&#39;&quot;MyWLEDPass&quot;&#39;</span>
-<span class="na">lib_deps</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${esp32.lib_deps}</span>
-<span class="na">monitor_filters</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">esp32_exception_decoder</span>
-<span class="na">board_build.partitions</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">${esp32.default_partitions}</span>
-</code></pre></div>
-<p>In <code>my_config.h</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#define WLED_AP_SSID_UNIQUE</span>
-<span class="cp">#define WLED_AP_SSID &quot;MyWLED&quot;</span>
-<span class="cp">#define WLED_AP_PASS &quot;MyWLEDPass&quot;</span>
-</code></pre></div>
+<h2 id="introduction">Introduction</h2>
+<p>WLED controllers can be used with PIR (Passive InfraRed) sensors for human presense detection. There are two types of sensors:</p>
+<ol>
+<li>
+<p>With integrated rotary potentiometers to adjust the sensitivity and the hold time. E.g. HC-SR501 type. These sensors can be connected to WLED and configured as a button.</p>
+</li>
+<li>
+<p>Without integrated possibility to adjust the sensitivity and the hold time. E.g. HC-SR602 type. For these you have to compile WLED with a PIR Sensor Usermod to have these settings in the software.</p>
+</li>
+</ol>
+<h2 id="using-hc-sr501-sensor">Using HC-SR501 sensor</h2>
+<p>This sensor type has the following features:</p>
+<ol>
+<li>
+<p>Three pins for connection (GND, supply voltage 5…12 V, data signal with 3.3V level). Ground (GND) and the supply voltage can be connected directly to a power supply unit (5 V or 12 V). Data signal can be connected directly to a GPIO of an ESP8266 or ESP32 controller.</p>
+</li>
+<li>
+<p>Jumper to switch between two modes. In position 1, when a movement is detected, a HIGH level (3.3V) is output on the data signal and the adjustable holding time is maintained. The data signal then goes back to LOW (0V), regardless of whether the movement is still present or not. If the movement continues, the data signal is switched back to HIGH after a blocking time of approx. 2.5 s. In position 2 it works similarly, but the data signal does not go to LOW as long as the movement is still present. Only when the movement no longer exists for an adjustable holding time, the data signal goes to LOW. So, position 2 is what you normally need.</p>
+</li>
+<li>
+<p>Poti for setting the holding time. If this is turned counterclockwise as far as it will go, the holding time is approx. 3…5 s. In the middle position it is approx. 100 s and in the end position clockwise approx. 200 s.</p>
+</li>
+<li>
+<p>Poti for adjusting the sensitivity. This is approx. 3 to 7 meters and is set lower if you turn the potentiometer clockwise.
+<img alt="" src="../../assets/images/content/pir_sensor_hc_sr501.jpg" /></p>
+</li>
+</ol>
+<p>In WLED SW you have two options how the sensor can be used:</p>
+<h3 id="option-1-as-a-switch">Option 1: as a switch</h3>
+<p>You set a button under “Config-&gt;”LED Preferences” so that you can set the GPIO used for the data signal and select “Switch”. Then, when movement is detected, LEDs are switched on and go out after a holding time without movement.
+<img alt="" src="../../assets/images/content/pir_sensor_as_switch.jpg" /></p>
+<h3 id="option-2-as-a-pir-sensor">Option 2: as a PIR sensor</h3>
+<p>You can set two presets, one of which is activated when movement is detected, and the other when there is no more movement and the hold time has expired. This gives more flexibility to set what exactly should happen.
+<img alt="" src="../../assets/images/content/pir_sensor_as_pir.jpg" /></p>
 
 
 
