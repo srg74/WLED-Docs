@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/ui/aircoookie/blurple.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.25">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
     
     
       
@@ -190,7 +190,7 @@
       
     </form>
     <div class="md-search__output">
-      <div class="md-search__scrollwrap" data-md-scrollfix>
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
             Initializing search
@@ -2174,8 +2174,8 @@ Please carefully compare all items in the category you are interested in, and yo
 <td>Very simple DIY board, minimum of required components, option for 5V/12V LEDs. Easy to solder (no SMT components). Simple to understand connection schematics and pictures. Can be used with ESP8266 or ESP32 in D1 mini Format.</td>
 </tr>
 <tr>
-<td><img alt="Gold Member" src="../../assets/images/content/akemi_gold.png" /><br/> <a href="https://sjmautoprod.com/RGB-Controllers/rgbwX-Wi-Fi-Controllers.html">SJM Autoprod rgbw, rgbw2+, rgbw4</a></td>
-<td>Complete, fully-sealed, analog and digital controllers for vehicular use. rgbw has one RGBW channel, rgbw2+ has two analog, RGBW channels plus two/four addressable outputs (requires external 5V source for 5V LEDs). rgbw4 has four analog RGBW channels. 2+ and 4 support 12V or PWM/analog inputs and have internal PTC "fuses".</td>
+<td><img alt="Gold Member" src="../../assets/images/content/akemi_gold.png" /><br/> <a href="https://www.tindie.com/products/sjmelectronics/rgbwx-series-led-controllers/">SJM Electronics rgbw, rgbw2+, rgbw4</a></td>
+<td>Complete, analog and digital controllers for vehicular use. rgbw has one RGBW channel, rgbw2+ has two analog, RGBW channels plus two/four addressable outputs (requires external 5V source for 5V LEDs). rgbw4 has four analog RGBW channels. 2+ and 4 support 12V or PWM/analog inputs and have internal PTC "fuses".</td>
 </tr>
 <tr>
 <td><a href="https://github.com/stanoba/wifi-desk-lamp">WiFi Controlled Desk Lamp</a></td>
@@ -2232,6 +2232,11 @@ Please carefully compare all items in the category you are interested in, and yo
 <td><a href="https://www.aliexpress.com/item/32820185063.html">SP511e</a></td>
 <td>ESP8285</td>
 <td>An ESP8285 2MB controller with 3 case buttons, built in mic, IR receiver, 38 key remote, and dual outputs. The dual outputs are connected to the same data pin. There is a step-by-step guide for <a href="https://github.com/scottrbailey/WLED-Utils/blob/gh-pages/sp511e_wled.md">Installing WLED on SP511E Controller</a>.</td>
+</tr>
+<tr>
+<td><a href="https://www.aliexpress.com/item/1005006472928868.html">SP530e</a></td>
+<td>ESP32-C3</td>
+<td>ESP32-C3 based Controller that supports both Addressable and PWM-based RGBWW LED strips. 5-24v DC input, sold under BTF lighting, RGBZone, etc. Vendors all list 'BanlanX' as the supporting mobile application. Board is silk screened with 'SP530e' but no other markings. Serial pads and GPIO9 are exposed on the back-side of the board. GPIO 9 must be pulled to GND at boot to enter flashing mode. I/O configuration: LEDPIN is 'GPIO19' for addressable LEDs, BTNPIN is GPIO 3. PWM pin out for RGBWW: WW: 4, CW: 5, R: 10, G: 6 and B: 7. Level shifter used: SN74HCT245 - Warning, the flash is <em>encrypted</em> - be sure to specify the <code>-encrypt</code> flag when flashing with <code>esptool.py</code>. Each device has a unique flash encryption key, but the devs forgot to burn the 'disable UART download' efuse, which means that any non-encrypted firmware can be flashed onto the device, and the device will encrypt the firmware on the first boot. Before flashing, please back up the original firmware of the device with esptool.py <code>esptool.py read_flash 0 0x400000 sp530e-encrypted.bin</code>. Pics of board and the flashing connector here: <a href="https://imgur.com/a/0orUKF1">https://imgur.com/a/0orUKF1</a> -  Sample flashing command: <code>esptool.py write_flash --encrypt 0x0 C3_bootloader.bin 0x8000 C3_partitions_4M.bin 0x10000 WLED_0.15.0-b3_ESP32C3_4MB.bin</code>.</td>
 </tr>
 <tr>
 <td><a href="https://www.electrodragon.com/product/esp-led-strip-board">ESP LED Strip WIFI Control Board [ESP Version]</a></td>
@@ -2323,6 +2328,11 @@ Please carefully compare all items in the category you are interested in, and yo
 <td><a href="https://www.digikey.com/product-detail/en/espressif-systems/ESP32-DEVKITC-32D/1965-1000-ND/9356990">ESP32 DevKitC v4</a></td>
 <td>ESP32</td>
 <td>The original ESP32 Development Board made by Espressif Systems.</td>
+</tr>
+<tr>
+<td><a href="https://www.aliexpress.us/item/3256805781327184.html">ESP32-C3 Super Mini</a></td>
+<td>ESP32-C3</td>
+<td>Very compact, easy to flash with the USB-C port, can support 3A over the USB-C connector. Extremely cheap, but only has one core so there's a small stutter during Wifi communication. <a href="https://roryhay.es/blog/esp32-c3-super-mini-flaw">Be careful purchasing! Some stores sell a version that has crippling Wifi strength issues.</a></td>
 </tr>
 <tr>
 <td><img alt="Gold Member" src="../../assets/images/content/akemi_gold.png" /><br/> <a href="https://www.tindie.com/products/28858/">ESP32 Mini Dev Board 16mb by SerKo (aka Serg)</a></td>
@@ -2521,7 +2531,7 @@ Please carefully compare all items in the category you are interested in, and yo
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.instant", "navigation.tabs", "content.action.edit"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.081f42fc.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fe8b6f2b.min.js"></script>
       
         <script src="../../assets/js/newtab.js"></script>
       
